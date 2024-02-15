@@ -91,9 +91,9 @@ The project will be available at http://localhost:3333.
 POST /polls
 ```
 
-``` JSON
 body request:
 
+``` JSON
 {
   "title": "Which Node.js framework do you prefer to use in your projects?",
   "options": [
@@ -105,13 +105,12 @@ body request:
 }
 ```
 
-``` JSON
 response:
 
+``` JSON
 {
   "pollId": "95bf305a-6202-4207-8564-0c851748e205"
 }
-
 ```
 
 ***
@@ -120,9 +119,9 @@ response:
 GET /polls
 ```
 
-``` JSON
 response:
 
+``` JSON
 {
   "polls": [
       {
@@ -135,7 +134,6 @@ response:
       },
   ]
 }
-
 ```
 
 ***
@@ -144,9 +142,9 @@ response:
 GET /polls/:pollId
 ```
 
-``` JSON
-response: 
+response:
 
+``` JSON
 {
   "poll": {
     "id": "0caf135e-d7bb-4313-8287-d8d0dc3d3d92",
@@ -183,24 +181,24 @@ response:
 POST /polls/:pollId/votes
 ```
 
-``` JSON
 request body:
 
+``` JSON
 {
 "pollOptionId": "e228e3f4-e90b-402d-963d-19b520a19547"
 }
 ```
 
-``` JSON
-response: 
+response:
 
-201 - Created
+``` JSON
+201
 
 {
   "sessionId": "0056123a-94e6-4883-b284-314dc0b7252d.DerszYUJC8kQSUOIek+ig5/j/E6yzRlLmP8V9r0/1Bs"
 }
 
-400 - Bad Request
+400
 
 {
   "message": "You already voted on this poll"
