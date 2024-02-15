@@ -57,7 +57,7 @@ npm install
 Example .env file:
 
 ```env
-DB_URL=postgres://user:password@localhost:5432/database_name
+DATABASE_URL="postgresql://docker:docker@localhost:3333/polls?schema=public"
 ```
 
 ### Running the Project
